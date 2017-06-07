@@ -263,6 +263,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="detailsField" destination="t2F-hg-eqi" id="x0Y-5z-E1Y"/>
+                        <outlet property="priceField" destination="etM-Nr-DDF" id="d6n-7o-Y3i"/>
+                        <outlet property="storePicker" destination="pZS-tG-Ec3" id="n9S-rK-ZWh"/>
+                        <outlet property="titleField" destination="mDD-eo-uKK" id="Yva-iO-j7y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsQ-33-zsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,7 +279,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yo0-aP-S8b" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KsT-K3-E09">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KsT-K3-E09">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
