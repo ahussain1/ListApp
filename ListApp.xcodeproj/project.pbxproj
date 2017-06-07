@@ -23,6 +23,9 @@
 		80D77AE31EE486B500A61C39 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D77ADB1EE486B500A61C39 /* Image+CoreDataProperties.swift */; };
 		80D77AE81EE48B9C00A61C39 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D77AE71EE48B9C00A61C39 /* MaterialView.swift */; };
 		80D77AEA1EE48D3F00A61C39 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D77AE91EE48D3F00A61C39 /* ItemCell.swift */; };
+		80D77AEF1EE7C2B600A61C39 /* imagePick.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D77AEE1EE7C2B600A61C39 /* imagePick.png */; };
+		80D77AF11EE7C40800A61C39 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D77AF01EE7C40800A61C39 /* CustomTextField.swift */; };
+		80D77AF31EE7C5AA00A61C39 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D77AF21EE7C5AA00A61C39 /* ItemDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		80D77ADB1EE486B500A61C39 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		80D77AE71EE48B9C00A61C39 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		80D77AE91EE48D3F00A61C39 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		80D77AEE1EE7C2B600A61C39 /* imagePick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePick.png; sourceTree = "<group>"; };
+		80D77AF01EE7C40800A61C39 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		80D77AF21EE7C5AA00A61C39 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +82,14 @@
 		80D77AAE1EE4836C00A61C39 /* ListApp */ = {
 			isa = PBXGroup;
 			children = (
-				80D77AE61EE48B8700A61C39 /* View */,
 				80D77AE41EE486BE00A61C39 /* Model */,
+				80D77AE61EE48B8700A61C39 /* View */,
+				80D77AEB1EE7C1ED00A61C39 /* Controller */,
 				80D77AAF1EE4836C00A61C39 /* AppDelegate.swift */,
 				80D77AB11EE4836C00A61C39 /* MainVC.swift */,
 				80D77AB31EE4836C00A61C39 /* Main.storyboard */,
 				80D77AB91EE4836C00A61C39 /* Assets.xcassets */,
+				80D77AEE1EE7C2B600A61C39 /* imagePick.png */,
 				80D77ABB1EE4836C00A61C39 /* LaunchScreen.storyboard */,
 				80D77ABE1EE4836C00A61C39 /* Info.plist */,
 				80D77AB61EE4836C00A61C39 /* ListApp.xcdatamodeld */,
@@ -115,10 +123,19 @@
 		80D77AE61EE48B8700A61C39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80D77AF01EE7C40800A61C39 /* CustomTextField.swift */,
 				80D77AE71EE48B9C00A61C39 /* MaterialView.swift */,
 				80D77AE91EE48D3F00A61C39 /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		80D77AEB1EE7C1ED00A61C39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80D77AF21EE7C5AA00A61C39 /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +200,7 @@
 			files = (
 				80D77ABD1EE4836C00A61C39 /* LaunchScreen.storyboard in Resources */,
 				80D77ABA1EE4836C00A61C39 /* Assets.xcassets in Resources */,
+				80D77AEF1EE7C2B600A61C39 /* imagePick.png in Resources */,
 				80D77AB51EE4836C00A61C39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,10 +221,12 @@
 				80D77AE11EE486B500A61C39 /* Store+CoreDataProperties.swift in Sources */,
 				80D77AB01EE4836C00A61C39 /* AppDelegate.swift in Sources */,
 				80D77AE01EE486B500A61C39 /* Store+CoreDataClass.swift in Sources */,
+				80D77AF31EE7C5AA00A61C39 /* ItemDetailsVC.swift in Sources */,
 				80D77ADF1EE486B500A61C39 /* ItemType+CoreDataProperties.swift in Sources */,
 				80D77ADD1EE486B500A61C39 /* Item+CoreDataProperties.swift in Sources */,
 				80D77AE21EE486B500A61C39 /* Image+CoreDataClass.swift in Sources */,
 				80D77AE31EE486B500A61C39 /* Image+CoreDataProperties.swift in Sources */,
+				80D77AF11EE7C40800A61C39 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +392,7 @@
 				80D77AC31EE4836C00A61C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
